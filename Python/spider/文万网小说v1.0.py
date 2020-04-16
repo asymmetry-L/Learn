@@ -32,8 +32,6 @@ chapter_info_list = re.findall(r'href="(.*?)">(.*?)<', dl)
 #(.*?)反向捕获
 
 for chapter_info in chapter_info_list:
-    # chapter_title = chapter_info[1]
-    # chapter_url = chapter_info[0]
     chapter_url, chapter_title = chapter_info
     chapter_url = 'http://www.txtwan.com%s' % chapter_url
     #下载章节内容
