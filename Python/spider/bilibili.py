@@ -1,6 +1,13 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 
+"""
+bug备注：
+    致命bug:
+        1.第160行：print(id)大概率多出几位
+        2.视频【BV1Cp4y1X7AF】调试时出现-3楼的情况
+"""
+
 # Here put the improt lib
 import json
 import re
@@ -145,16 +152,19 @@ if __name__ == "__main__":
                 if similarity(hash_code_hot,hash_code_cm) > max_num:
                     max_num = similarity(hash_code_hot,hash_code_cm)
                     lucky_code = hash_code_cm
+                    lucky_name = userName
+                    lucky_id = uid
                     # print('\n*************************')
                     # print(lucky_code + '--'+ str(max_num) +'--')
                     # print('*************************')
                     # print(f'\r{lucky_code}|相似度:{max_num}', end = '')
                     # print(f'\r***LUCKY MAN***')
-                    print(f'\r第{key}楼  NAME:{userName}  ID:{uid}',end = '')
+                    print('\r第%s楼  NAME:%s  ID:%s' %(key,lucky_name,lucky_id),end='')
+                    # print(lucky_name,lucky_id)
                 # print(f'\r{cm_word}' , end = '')
-                
                 time.sleep(0.05)
-            print('\n')
+            # print('\r')
+            print('\n',lucky_name,lucky_id)
         else:
             print('BV号有误')
 
