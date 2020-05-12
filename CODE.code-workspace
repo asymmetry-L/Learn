@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "Python"
+		},
+		{
+			"path": "Html"
+		},
+		{
+			"path": "Markdown"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Html",
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#4a4657",
+			"activityBar.activeBorder": "#180c08",
+			"activityBar.background": "#4a4657",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#180c08",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"statusBar.background": "#322f3b",
+			"statusBar.border": "#322f3b",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#4a4657",
+			"titleBar.activeBackground": "#322f3b",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.border": "#322f3b",
+			"titleBar.inactiveBackground": "#322f3b99",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#322f3b"
+	}
+}
