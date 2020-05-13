@@ -1,20 +1,26 @@
-#!/usr/bin/env python
-# -*- encoding: utf-8 -*-
+def deco_para(parameter):
+    print('enter deco_para')
 
-# Here put the improt lib
+    def deco_func(func):
+        print('enter deco_func')
 
-def over(func):
-    def bar(*args):
-        re = func(*args)
-        print('run over!')
-        return re
-    return bar
+        def wrapper(*args, **kwargs):
+            print('enter wrapper')
+            print(parameter)
+            print('---wrapper: before func---')
+            func(*args, **kwargs)
+            print('---wrapper: after func---')
 
-@over
-def add(x, y):
-    return x + y
+        return wrapper
 
-a = 1000
-b = 9999
+    return deco_func
 
-print(add(a,b))
+
+@deco_para(123)
+def foo():
+    print('---foo---')
+
+
+if __name__ == '__main__':
+    print('--start--')
+    foo()
