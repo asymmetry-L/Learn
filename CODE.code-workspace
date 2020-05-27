@@ -8,6 +8,12 @@
 		},
 		{
 			"path": "Markdown"
+		},
+		{
+			"path": "C C++"
+		},
+		{
+			"path": "C#"
 		}
 	],
 	"settings": {
