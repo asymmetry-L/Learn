@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\C#\\C#.csproj": {}
+    "D:\\Code\\C#\\Hello World\\Hello World.csproj": {}
   },
   "projects": {
-    "D:\\Code\\C#\\C#.csproj": {
+    "D:\\Code\\C#\\Hello World\\Hello World.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\C#\\C#.csproj",
-        "projectName": "C#",
-        "projectPath": "D:\\Code\\C#\\C#.csproj",
+        "projectUniqueName": "D:\\Code\\C#\\Hello World\\Hello World.csproj",
+        "projectName": "Hello World",
+        "projectPath": "D:\\Code\\C#\\Hello World\\Hello World.csproj",
         "packagesPath": "C:\\Users\\Asymmetry\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\C#\\obj\\",
+        "outputPath": "D:\\Code\\C#\\Hello World\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asymmetry\\AppData\\Roaming\\NuGet\\NuGet.Config"

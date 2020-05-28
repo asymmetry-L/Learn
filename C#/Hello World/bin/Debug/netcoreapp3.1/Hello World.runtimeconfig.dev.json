@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Asymmetry\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Asymmetry\\.nuget\\packages"
+    ]
+  }
+}
