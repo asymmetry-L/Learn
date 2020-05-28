@@ -10,11 +10,18 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Hello World/bin/Debug/netcoreapp3.1/Hello World.dll",
+            "program": "${workspaceFolder}/11/bin/Debug/netcoreapp3.1/11.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Hello World",
+            "cwd": "${workspaceFolder}/11",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
         },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
 }
