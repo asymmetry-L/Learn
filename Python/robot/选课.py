@@ -4,11 +4,16 @@
 import requests
 
 # url = '61.185.143.11:1170'
-url = 'http://www.slxy.edu.cn:1170/jwglxt/xtgl/login_slogin.html?language=zh_CN&login_type='
+url = 'http://www.slxy.edu.cn:1170/jwglxt/xsxk/zzxkyzb_cxZzxkYzbPartDisplay.html?gnmkdm=N253512&su=18166209'
 postdata = {
-    'yhm':'18166209',
-    'mm':'a284515',
+    'gnmkdm':'N253512',
+    'su':'18166209',
 }
-reponse = requests.post(url,data=postdata)
+cookie = {
+    'JSESSIONID' : '49ECB7DB3B476CC42DE4705855324F30',
+    'JSESSIONID' : '0F665513824623ABC6533E6203D0ECFA', 
+    'route' : '68d58c011cb7465d132f3597597602ea'
+}
+reponse = requests.post(url,data=postdata,cookies = cookie)
 text = reponse.text
 print(text) 

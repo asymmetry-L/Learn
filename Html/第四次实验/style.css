@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  font-size: 12.6px;
+}
+li {
+  list-style: none;
+}
+.top {
+  /* width: 1519.2; */
+  height: 165px;
+  background-color: #b61c1c;
+  /* position:relative; */
+}
+.top .text-small {
+  width: 1266px;
+  height: 130px;
+  margin: 0 116.6px;
+  padding: 0 10px;
+}
+.top .text-small .logo {
+  float: left;
+}
+.top .text-small .logo img {
+  margin: 30px 510px 0 0;
+  padding: 0 10px;
+}
+.top .text-small .right {
+  margin: 50px 0 0 0;
+  float: right;
+}
+.top .text-small .right .a-bottom {
+  text-align: right;
+}
+.top .text-small .right .a-bottom a {
+  color: #fff;
+  font-size: 12.6px;
+}
+.top .text-small .right .form-input table {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.top .text-small .right .form-input input {
+  border: none;
+  height: 18.2px;
+  width: 236.6px;
+  padding: 3px 2px 1px 18px;
+}
+.nav {
+  padding: 0 159.1px;
+  height: 45px;
+}
+.nav .navv {
+  padding: 0 10px;
+}
+.nav .navv ul li {
+  float: left;
+  /* height: 20px;
+  width: 60px; */
+  padding: 12.1px 0;
+  font-weight: normal;
+}
+/* .nav .navv ul li:hover{
+  background-color: #c21f30;
+} */
+.nav .navv ul li a {
+  padding: 12.1px 27px;
+  width: 60px;
+  height: 20px;
+  color: #000000;
+  font-size: 16px;
+}
+.nav .navv ul li a:hover {
+  color: #fff;
+  background-color: #c21f30;
+}
+.pics img {
+  width: 1519.2px;
+  height: 400px;
+}
+.news .container1 {
+  padding: 0 10px;
+  margin: 0 160px;
+  padding: 0 10px;
+  height: 520px;
+}
+.news .container1 h4,
+.news .container2 h4 {
+  height: 48px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: url(http://www.slxy.cn/images/red/h1bg.png) no-repeat;
+  margin: 20px 0;
+  padding-left: 30px;
+}
+.news .container1 h4 a,
+.news .container2 h4 a {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  float: right;
+}
+.news .container1 span,
+.news .container2 span {
+  text-align: center;
+  vertical-align: middle;
+  width: 10px;
+  font-size: 9pt;
+  line-height: 100%;
+}
+.news .container1 a,
+.news .container2 a {
+  color: #222222;
+  line-height: 200%;
+  font-family: Microsoft YaHei;
+  font-size: 12pt;
+  text-decoration: none;
+}
+.news .container1 .t-tag,
+.news .container2 .t-tag {
+  color: #868686;
+  line-height: 200%;
+  font-family: Microsoft YaHei;
+  font-size: 12pt;
+  text-decoration: none;
+}
+.news .container1 .new {
+  width: 66.67%;
+  float: left;
+  position: relative;
+  /* max-width: 1px; */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.news .container1 .new .row {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 0 10px;
+}
+.news .container1 .new .row .row-w {
+  width: 50%;
+  float: left;
+}
+.news .container1 .new .row .row-w img {
+  width: 374px;
+  height: 210px;
+}
+.news .container1 .notice {
+  float: right;
+}
+/* .news .container1 .t-s{
+  float: left;
+} */
+.news .container1 .t-s {
+  float: left;
+  width: 33.34%;
+  float: left;
+  position: relative;
+  /* max-width: 1px; */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.news .container1 .t-s h4,
+.news .container2 .con .kstd {
+  height: 48px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background: url(http://www.slxy.cn/images/red/h1bg1.png) no-repeat;
+  margin: 20px 0;
+  padding-left: 30px;
+}
+.news .container1 .new2 {
+  width: 66.66%;
+  height: 190.4px;
+  float: right;
+  position: relative;
+  /* max-width: 1px; */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.news .container1 .new2 .t1 td {
+  width: 156px;
+  height: 143px;
+}
+.news .container1 .new2 .a-img .t1 img {
+  margin-top: 31px;
+  width: 153px;
+  height: 69px;
+}
+.news .container1 .new2 .t2 td {
+  text-align: center;
+}
+.news .container1 .new2 .t2 a {
+  color: #868686;
+}
+.news .container2 {
+  height: 370px;
+  background-color: #f7f7f7;
+}
+.news .container2 .bc {
+  margin: 0 160px;
+}
+.news .container2 .con {
+  margin-top: 20px;
+  width: 33.33%;
+  float: left;
+  position: relative;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.news .container2 .con .row .row-w .n-txt .kd {
+  text-align: center;
+}
+.news .container2 .con .row .row-w .n-txt .kd td {
+  height: 60px;
+  width: 113.3px;
+}
+.news .container2 .con .row .row-w .n-txt .kd td a {
+  color: #868686;
+  font-size: 15px;
+  line-height: 26px;
+}
+.news .container3{
+  height: 184px;
+  background: url(http://www.slxy.cn/images/red/redbg.png) no-repeat top center;
+}
+.news .container3 .container{
+  margin: 0 160px;
+  text-align: center;
+}
+.news .container3 .container .maile,
+.news .container3 .container .number,
+.news .container3 .container .glogo{
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 0 10px;
+  float: left;
+}
+.news .container3 .container .maile table{
+  padding: 56px 0 0 60px;
+}
+.news .container3 .container td a{
+  padding: 0 20px;
+  color: #dee8fb;
+  font-size: 15px;
+}
+
+.news .container3 .container .number {
+  padding: 56px;
+  text-align: left;
+  font-size: 15px;
+  color: #dee8fb;
+}
+.news .container3 .container .number p{
+  width: 380px;
+  height: 33.6px;
+}
+.news .container3 .container .glogo table{
+  padding: 56px 0 0 80px;
+}
+.footer{
+  height: 48px;
+  background-color: #1f1c1d;
+}
+.footer .container{
+  padding: 10px 10px;
+  margin: 0 159.6px;
+  text-align: center;
+}
+.footer .container .text-center{
+  font-size: 15px;
+  color: #fff;
+}
+.footer .container .text-center a{
+  font-size: 15px;
+  color: #868686;
+}
+.footer .container .text-center a img{
+  height: 17px;
+  width: 17px;
