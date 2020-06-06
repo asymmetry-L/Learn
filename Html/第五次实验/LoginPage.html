@@ -17,8 +17,7 @@
                         onclick="canRegister()" id="s2">Register</span>
                 </div>
                 <form action="" method="" name="logForm" onsubmit="return isForm(this)">
-                    <div id="inputEmail" class="conceal"><input type="text" name="userMail" onfocus="canUp(this)"
-                            placeholder="E-mail"></div>
+                    <div id="inputEmail" class="conceal"><input type="text" name="userMail" placeholder="E-mail"></div>
                     <div id="inputUn"><input type="text" name="userName" placeholder="Username"></div>
                     <div id="inputPsw"><input type="password" name="passWord" placeholder="Password"></div>
                     <div id="inputRe" class="conceal"><input type="password" name="rePassWord" placeholder="Repeat">
@@ -66,33 +65,42 @@
     function isForm(field) {
         var El = document.logForm.userMail;
         var Un = document.logForm.userName;
-        var Psw = document.logForm.Password;
+        var Psw = document.logForm.passWord;
         var Rp = document.logForm.rePassWord;
 
         var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
         if (El.value == "" && $("#s2").className =="active") {
             alert("邮箱不能为空!");
+            El.focus();
             return false;
         } else if (!reg.test(El.value) && $("#s2").className =="active"){
             alert("输入不合法!");
+            El.focus();
             return false;
         }; 
-        if (un.value == "") {
+        if (Un.value == "") {
             alert("用户名不能为空!");
+            Un.focus();
             // un.focus();
             return false;
         };
-        if (Psw.value.length < 6) {
-            alert("密码较短，安全性低!"+Psw.value.length);
+        // var p = e;
+        if (Psw.value.length < 6 && $("#s2").className =="active") {
+            alert("密码较短，安全性低!");
+            Psw.focus();
+            return false;
+        } else if (Psw.value == "") {
+            alert("密码不能为空!");
+            Psw.focus();
             return false;
         };
         if (Rp.value != Psw.value && $("#s2").className =="active") {
-            alert("密码验证错误");
+            alert("密码验证失败!");
+            Rp.focus();
             return false;
         } else {
             return true;
         }
-        
     };
     // function validate_required(field, alerttxt) {
     //     with (field) {

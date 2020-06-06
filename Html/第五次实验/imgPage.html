@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-stamp.css">
+</head>
+
+<body>
+    <div class="L-txt">
+        <span class="tt">ENJOY</span>
+        <br>
+        <span class="tt">YOUR LIFE!</span>
+        <br>
+        <span class="bt">2020</span>
+    </div>
+    <div class="stamp" onmouseover="canMove()" onmouseout="canRemove()">
+        <div class="image">
+            <div class="top-txt">80</div>
+            <img id="island" class="" src="https://ae03.alicdn.com/kf/Hd96816e95bec4cc58ca1dbd62d949423h.png" alt="">
+            <img id="sea" class="i" src="https://ae04.alicdn.com/kf/H3f5f2eaf7c074f14a8dbf208214c2e426.png" alt="">
+            <div class="bottom-txt">Enjoy your life!</div>
+        </div>
+    </div>
+    <div class="R-txt">
+        <span class="tt">01</span>
+        <br>
+        <span class="bt">-By Ruky</span>
+    </div>
+</body>
+<script>
+    function $(arg) {
+        var mold = arg[0];
+        var tag = "";
+        if (mold == ".") {
+            tag = document.getElementsByClassName(arg.substring(1));
+        } else if (mold == "#") {
+            tag = document.getElementById(arg.substring(1));
+        } else {
+            tag = document.getElementsByTagName(arg);
+        }
+        return tag;
+    };
+    function canMove() {
+        $("#sea").className = "";
+        $("#island").className ="i";
+    };
+    function canRemove() {
+        $("#sea").className = "i";
+        $("#island").className ="";
+    };
+</script>
+
+</html>
