@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\css\style-index.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <li class="logo">
+                <!-- <a href="https://www.warframe.com/zh-hans" target="_blank" rel="noopener noreferrer"></a> -->
+                <a href="https://www.warframe.com/zh-hans" target="_blank">
+                    <img src="http://n9e5v4d8.ssl.hwcdn.net/images/logoWhite.png" alt="logoWhite">
+                </a></li>
+            <br>
+            <li class="navTag"><a href="战甲.html">战甲</a></li>
+            <li class="navTag"><a href="##">武器</a></li>
+            <li class="navTag"><a href="##">同伴</a></li>
+            <li class="navTag"><a href="##">MOD</a></li>
+            <li class="navTag"><a href="##">派系</a></li>
+            <li class="navTag"><a href="##">任务</a></li>
+            <li class="navTag"><a href="Archwing.html">Archwing</a></li>
+            <li class="navTag"><a href="##">地图板块</a></li>
+            <li class="navTag"><a href="##">系列任务</a></li>
+            <li class="navTag"><a href="##">开放地形</a></li>
+            <li class="navTag"><a href="##">轨道星舰</a></li>
+        </ul>
+    </div>
+    <div class="countdown">
+        <p id="time"></p>
+    </div>
+</body>
+<script>
+    function $(arg) {
+        var mold = arg[0];
+        var tag = "";
+        if (mold == ".") {
+            tag = document.getElementsByClassName(arg.substring(1));
+        } else if (mold == "#") {
+            tag = document.getElementById(arg.substring(1));
+        } else {
+            tag = document.getElementsByTagName(arg);
+        }
+        return tag;
+    };
+    window.onload = function(){setInterval(getTime(),1000)}
+    function getTime() {
+        var endData = new Date();
+        
+        var getData = new Date();
+        var year = getData.getFullYear();
+        var month = getData.getMonth();
+        var week = getData.getDay();
+        var day = getData.getDate();
+        // alert(getData);
+        var l = getData.setDate()
+        return getData;
+    };
+    setInterval(function(){$("#time").innerHTML= getTime();},1000)
+</script>
+</html>

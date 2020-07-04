@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archwing</title>
+    <link rel="stylesheet" href="..\css\style-Archwing.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <a href="##">
+                <img src="..\Image\logo.png" alt="">
+            </a>
+        </div>
+        <div class="body">
+            <div class="left">
+                <div class="Amesha" onclick="canMove(this)">
+                    <i>
+                        <img src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/7b/ArchwingSuitSupport.png/225px-ArchwingSuitSupport.png"
+                            alt="">
+                        <p>Amesha</p>
+                    </i>
+                </div>
+                <div class="Elytron" onclick="canMove(this)">
+                    <i>
+                        <img src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e0/ArchwingSuitDemolition.png/246px-ArchwingSuitDemolition.png"
+                            alt="">
+                        <p>Elytron</p>
+                    </i>
+                </div>
+                <div class="Itzal" onclick="canMove(this)">
+                    <i>
+                        <img src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/4/4d/ArchwingSuitStealth.png/246px-ArchwingSuitStealth.png"
+                            alt="">
+                        <p>Itzal</p>
+                    </i>
+                </div>
+                <div class="Odonata" onclick="canMove(this)">
+                    <i>
+                        <img src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/a0/ArchwingSuitStandard.png/246px-ArchwingSuitStandard.png"
+                            alt="">
+                        <p>Odonata</p>
+                    </i>
+                </div>
+            </div>
+            <div class="right">
+                <h3 class="archw-name">Archwing</h3>
+                <div class="right-top">
+                    <ul>
+                        <li id="view" onclick="canReMove('view')">概述</li>
+                        <li id="skill" onclick="canReMove('skill')">技能</li>
+                        <li id="fabr" onclick="canReMove('fabr')">制造条件</li>
+                    </ul>
+                </div>
+                <div class="archw-card">
+                    <div id="card-Amesha">
+                        <table class="infobox">
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="name"> Amesha
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="image"> <a
+                                            href="/wiki/%E6%96%87%E4%BB%B6:ArchwingSuitSupport.png" class="image"><img
+                                                alt="ArchwingSuitSupport.png"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/7b/ArchwingSuitSupport.png/250px-ArchwingSuitSupport.png"
+                                                width="250" height="167"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/7b/ArchwingSuitSupport.png/375px-ArchwingSuitSupport.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/7b/ArchwingSuitSupport.png/500px-ArchwingSuitSupport.png 2x"
+                                                data-file-width="512" data-file-height="342"></a><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="category"> 基础属性
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E7.94.9F.E5.91.BD"
+                                                class="mw-redirect" title="Warframe Attributes">生命</a></b>
+                                    </td>
+                                    <td class="right"> 400
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.9B.BE"
+                                                class="mw-redirect" title="Warframe Attributes">护盾容量</a></b>
+                                    </td>
+                                    <td class="right"> 200
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.94.B2"
+                                                class="mw-redirect" title="Warframe Attributes">护甲</a></b>
+                                    </td>
+                                    <td class="right"> 200
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E8.83.BD.E9.87.8F"
+                                                class="mw-redirect" title="Warframe Attributes">能量</a></b>
+                                    </td>
+                                    <td class="right"> 200
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a
+                                                href="/wiki/Warframe_Attributes#.E9.A3.9E.E8.A1.8C.E9.80.9F.E5.BA.A6"
+                                                class="mw-redirect" title="Warframe Attributes">飞行速度</a></b>
+                                    </td>
+                                    <td class="right"> 1.10
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Mods#Polarity" class="mw-redirect"
+                                                title="Mods">极性</a></b>
+                                    </td>
+                                    <td class="right"><a href="/wiki/Polarity" title="Polarity"><img
+                                                alt="Naramon Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/20px-Naramon_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/30px-Naramon_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/40px-Naramon_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a><a href="/wiki/Polarity"
+                                            title="Polarity"><img alt="Vazarin Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/20px-Vazarin_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/30px-Vazarin_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/40px-Vazarin_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a><a href="/wiki/Polarity"
+                                            title="Polarity"><img alt="Madurai Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/20px-Madurai_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/30px-Madurai_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/40px-Madurai_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="card-Elytron" class="notshow">
+                        <table class="infobox" cellspacing="2">
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="name"> Elytron
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="image"> <a
+                                            href="/wiki/%E6%96%87%E4%BB%B6:ArchwingSuitDemolition.png"
+                                            class="image"><img alt="ArchwingSuitDemolition.png"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e0/ArchwingSuitDemolition.png/250px-ArchwingSuitDemolition.png"
+                                                width="250" height="152"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e0/ArchwingSuitDemolition.png/375px-ArchwingSuitDemolition.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e0/ArchwingSuitDemolition.png/500px-ArchwingSuitDemolition.png 2x"
+                                                data-file-width="512" data-file-height="312"></a><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="category"> 基础属性
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E7.94.9F.E5.91.BD"
+                                                class="mw-redirect" title="Warframe Attributes">生命</a></b>
+                                    </td>
+                                    <td class="right"> 450
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.9B.BE"
+                                                class="mw-redirect" title="Warframe Attributes">护盾容量</a></b>
+                                    </td>
+                                    <td class="right"> 450
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.94.B2"
+                                                class="mw-redirect" title="Warframe Attributes">护甲</a></b>
+                                    </td>
+                                    <td class="right"> 150
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E8.83.BD.E9.87.8F"
+                                                class="mw-redirect" title="Warframe Attributes">能量</a></b>
+                                    </td>
+                                    <td class="right"> 125
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a
+                                                href="/wiki/Warframe_Attributes#.E9.A3.9E.E8.A1.8C.E9.80.9F.E5.BA.A6"
+                                                class="mw-redirect" title="Warframe Attributes">飞行速度</a></b>
+                                    </td>
+                                    <td class="right"> 0.9
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Mods#Polarity" class="mw-redirect"
+                                                title="Mods">极性</a></b>
+                                    </td>
+                                    <td class="right"><a href="/wiki/Polarity" title="Polarity"><img
+                                                alt="Madurai Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/20px-Madurai_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/30px-Madurai_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/40px-Madurai_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a> <a href="/wiki/Polarity"
+                                            title="Polarity"><img alt="Madurai Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/20px-Madurai_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/30px-Madurai_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/40px-Madurai_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="card-Itzal" class="notshow">
+                        <table class="infobox" cellspacing="2">
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="name"> Itzal
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="image"> <a
+                                            href="/wiki/%E6%96%87%E4%BB%B6:ArchwingSuitStealth.png" class="image"><img
+                                                alt="ArchwingSuitStealth.png"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/4/4d/ArchwingSuitStealth.png/250px-ArchwingSuitStealth.png"
+                                                width="250" height="152"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/4/4d/ArchwingSuitStealth.png/375px-ArchwingSuitStealth.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/4/4d/ArchwingSuitStealth.png/500px-ArchwingSuitStealth.png 2x"
+                                                data-file-width="512" data-file-height="312"></a><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="category"> 基础属性
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E7.94.9F.E5.91.BD"
+                                                class="mw-redirect" title="Warframe Attributes">生命</a></b>
+                                    </td>
+                                    <td class="right"> 200
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.9B.BE"
+                                                class="mw-redirect" title="Warframe Attributes">护盾容量</a></b>
+                                    </td>
+                                    <td class="right"> 200
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.94.B2"
+                                                class="mw-redirect" title="Warframe Attributes">护甲</a></b>
+                                    </td>
+                                    <td class="right"> 50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E8.83.BD.E9.87.8F"
+                                                class="mw-redirect" title="Warframe Attributes">能量</a></b>
+                                    </td>
+                                    <td class="right"> 200
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a
+                                                href="/wiki/Warframe_Attributes#.E9.A3.9E.E8.A1.8C.E9.80.9F.E5.BA.A6"
+                                                class="mw-redirect" title="Warframe Attributes">飞行速度</a></b>
+                                    </td>
+                                    <td class="right"> 1.2
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Mods#Polarity" class="mw-redirect"
+                                                title="Mods">极性</a></b>
+                                    </td>
+                                    <td class="right"><a href="/wiki/Polarity" title="Polarity"><img
+                                                alt="Madurai Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/20px-Madurai_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/30px-Madurai_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/40px-Madurai_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a> <a href="/wiki/Polarity"
+                                            title="Polarity"><img alt="Vazarin Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/20px-Vazarin_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/30px-Vazarin_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/40px-Vazarin_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a> <a href="/wiki/Polarity"
+                                            title="Polarity"><img alt="Naramon Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/20px-Naramon_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/30px-Naramon_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/40px-Naramon_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="card-Odonata" class="notshow">
+                        <table class="infobox" cellspacing="2">
+
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="name"> Odonata
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="image"> <a
+                                            href="/wiki/%E6%96%87%E4%BB%B6:ArchwingSuitStandard.png" class="image"><img
+                                                alt="ArchwingSuitStandard.png"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/a0/ArchwingSuitStandard.png/250px-ArchwingSuitStandard.png"
+                                                width="250" height="152"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/a0/ArchwingSuitStandard.png/375px-ArchwingSuitStandard.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/a0/ArchwingSuitStandard.png/500px-ArchwingSuitStandard.png 2x"
+                                                data-file-width="512" data-file-height="312"></a><br>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" class="category"> 基础属性
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E7.94.9F.E5.91.BD"
+                                                class="mw-redirect" title="Warframe Attributes">生命</a></b>
+                                    </td>
+                                    <td class="right"> 300 （30级时900）
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.9B.BE"
+                                                class="mw-redirect" title="Warframe Attributes">护盾容量</a></b>
+                                    </td>
+                                    <td class="right"> 300 （30级时900）
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E6.8A.A4.E7.94.B2"
+                                                class="mw-redirect" title="Warframe Attributes">护甲</a></b>
+                                    </td>
+                                    <td class="right"> 100
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Warframe_Attributes#.E8.83.BD.E9.87.8F"
+                                                class="mw-redirect" title="Warframe Attributes">能量</a></b>
+                                    </td>
+                                    <td class="right"> 100 （30级时180）
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a
+                                                href="/wiki/Warframe_Attributes#.E9.A3.9E.E8.A1.8C.E9.80.9F.E5.BA.A6"
+                                                class="mw-redirect" title="Warframe Attributes">飞行速度</a></b>
+                                    </td>
+                                    <td class="right"> 1.0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left"> <b><a href="/wiki/Mods#Polarity" class="mw-redirect"
+                                                title="Mods">极性</a></b>
+                                    </td>
+                                    <td class="right"><a href="/wiki/Polarity" title="Polarity"><img
+                                                alt="Madurai Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/20px-Madurai_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/30px-Madurai_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b2/Madurai_Pol.svg/40px-Madurai_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a> <a href="/wiki/Polarity"
+                                            title="Polarity"><img alt="Vazarin Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/20px-Vazarin_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/30px-Vazarin_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/6f/Vazarin_Pol.svg/40px-Vazarin_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a> <a href="/wiki/Polarity"
+                                            title="Polarity"><img alt="Naramon Pol.svg"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/20px-Naramon_Pol.svg.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/30px-Naramon_Pol.svg.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/6/60/Naramon_Pol.svg/40px-Naramon_Pol.svg.png 2x"
+                                                data-file-width="50" data-file-height="50"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="overview">
+                    <div id="view-Amesha">
+                        <div class="view">
+                            <h4>资料库</h4>
+                            <div>
+                                <span>化身飞翼守护者</span>
+                                <p>Amesha是一款支援型的Archwing，它以牺牲进攻能力为代价，转而配备了范围防御性技能。它可以为队友提供加成、治疗队友或削弱敌人。</p>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <h4>更新资料</h4>
+                            <div>
+                                <div>
+                                    <span>内含吸取：热修3 - 2016年10月14日（五）</span>
+                                    <li>修正了警惕机群在退出Archwing模式后依然存在的问题。</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="view-Elytron" class="notshow">
+                        <div class="view">
+                            <h4>资料库</h4>
+                            <div>
+                                <span>为破坏而生</span>
+                                <p>Elytron是一款进攻型的Archwing。它擅长区域轰炸，能对复数敌人使用其特有的导弹输出大量伤害。</p>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <h4>更新资料</h4>
+                            <div>
+                                <div>
+                                    <span>Harrow的枷锁：热修21.1.1 - 2017年7月21日 (五)</span>
+                                    <li>修正了更多有关Elytron的通气核心技能的能量颜色问题。</li>
+                                </div>
+                                <div>
+                                    <span>Octavia的赞歌：更新20 - 2017年3月25日 (六)</span>
+                                    <li>疑似修复了Elytron的毁灭弹头技能冷却时间过长的问题</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="view-Itzal" class="notshow">
+                        <div class="view">
+                            <h4>资料库</h4>
+                            <div>
+                                <span>隐匿的致命突袭者</span>
+                                <p>Itzal是以潜行和支援见长的Archwing。它的能力可以隐蔽自身同时能对敌方的行动进行扰乱。专为隐匿行动而打造，这架Archwing擅长在太空的黑暗中进行突袭作战。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <h4>更新资料</h4>
+                            <div>
+                                <div>
+                                    <span>九重天：Ivara Prime 27.0.9 - 2020年1月10日 (五)</span>
+                                    <li>修正玩家使用 Itzal 的钩锁来逃离水面时会在身上呈现永久性水质效果问题。</li>
+                                </div>
+                                <div>
+                                    <span>澎湃狂潮：更新26.1.0 - 2019年11月23日 (六)</span>
+                                    <li>ARCHWING钩锁 替代了Itzal 的闪瞬技能：</li>
+                                    <li>发射一道钩锁把敌人拉近，或是把 Warframe 拉向被其钩住的任何一个静止物体。</li>
+                                </div>
+                                <div>
+                                    <span>夜灵平野：热修22.8.3 - 2018年1月11日 (四)</span>
+                                    <li>Itzal的半影屏蔽技能现在会自动取消冲刺切换状态，以避免玩家不小心移动后直接将技能取消。</li>
+                                </div>
+                                <div>
+                                    <span>夜灵平野：更新22.5.0 - 2017年12月1日 (五)</span>
+                                    <li>修正了手柄摇杆的轻微移动都会打断Itzal的半影屏蔽技能的问题。</li>
+                                </div>
+                                <div>
+                                    <span>Octavia的赞歌：热修20.2.4 - 2017年4月21日 (五)</span>
+                                    <li>修正了Itzal的护卫战机技能造成的视角问题。</li>
+                                </div>
+                                <div>
+                                    <span>内含吸取：热修3 - 2016年10月14日 (五)</span>
+                                    <li>修正了闪瞬会与Odonata的能量护罩相碰撞的问题。</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="view-Odonata" class="notshow">
+                        <div class="view">
+                            <h4>资料库</h4>
+                            <div>
+                                <span>平衡的攻防能力</span>
+                                <p>Odonata 是Tenno得到的首个Archwing。只要完成金星上的The
+                                    Archwing任务就能得到它。Odonata兼顾攻击和防守能力。它能使用护罩屏蔽掉敌人的远程攻击，也能使用远程攻击技能打击敌人。</p>
+                            </div>
+                        </div>
+                        <div class="update">
+                            <h4>更新资料</h4>
+                            <div>
+                                <div>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div id="skill-Amesha" class="notshow">
+                        <div class="row">
+                            <img src="..\Image\Amesha (1).png" alt="">
+                            <img src="..\Image\Amesha (2).png" alt="">
+                            <img src="..\Image\Amesha (3).png" alt="">
+                            <img src="..\Image\Amesha (4).png" alt="">
+                        </div>
+                    </div>
+                    <div id="skill-Elytron" class="notshow">
+                        <div class="row">
+                            <img src="..\Image\Elytron (1).png" alt="">
+                            <img src="..\Image\Elytron (2).png" alt="">
+                            <img src="..\Image\Elytron (3).png" alt="">
+                            <img src="..\Image\Elytron (4).png" alt="">
+                        </div>
+                    </div>
+                    <div id="skill-Itzal" class="notshow">
+                        <div class="row">
+                            <img src="..\Image\Itzal (1).png" alt="">
+                            <img src="..\Image\Itzal (2).png" alt="">
+                            <img src="..\Image\Itzal (3).png" alt="">
+                            <img src="..\Image\Itzal (4).png" alt="">
+                        </div>
+                    </div>
+                    <div id="skill-Odonata" class="notshow">
+                        <div class="row">
+                            <img src="..\Image\Odonata (1).png" alt="">
+                            <img src="..\Image\Odonata (2).png" alt="">
+                            <img src="..\Image\Odonata (3).png" alt="">
+                            <img src="..\Image\Odonata (4).png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="fabrication">
+                    <div id="fabr-Amesha" class="notshow">
+                        <table class="foundrytable full-width-xs">
+                            <tbody>
+                                <tr>
+                                    <th colspan="6" style="height: 20px;padding-top: 10px;"><a href="##"
+                                            class="mw-redirect" title="Foundry">制造</a>条件
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="" title="现金"><img
+                                                alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>25,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">外甲<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">机翼<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">系统<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>4
+                                    </td>
+                                    <td style="text-align:left;">时间: 12小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><small><a href="/wiki/Market" class="mw-redirect"
+                                                title="Market">商店</a>售价: <a href="/wiki/Platinum" title="白金"><img
+                                                    alt="白金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                    width="20" height="20"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 275
+                                        </small></td>
+                                    <td colspan="3"><small><a href="/wiki/Blueprint" class="mw-redirect"
+                                                title="Blueprint">蓝图</a>售价: <a href="/wiki/Credits" title="现金"><img
+                                                    alt="现金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/22px-Credits64.png"
+                                                    width="22" height="22"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/33px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/44px-Credits64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 15,000
+                                        </small></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">外甲
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>900
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>3,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,500
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">机翼
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Neurodes"
+                                            title="神经元"><img alt="神经元"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/32px-Neurode64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/48px-Neurode64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/77/Neurode64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>4,200
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">系统
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Control_Module"
+                                            title="控制模块"><img alt="控制模块"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/32px-ControlModule64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/48px-ControlModule64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/e/e1/ControlModule64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Salvage"
+                                            title="回收金属"><img alt="回收金属"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/32px-Salvage64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/48px-Salvage64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/f/ff/Salvage64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>6,700
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>2,800
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fabr-Elytron" class="notshow">
+                        <table class="foundrytable full-width-xs">
+                            <tbody>
+                                <tr>
+                                    <th colspan="6" style="height: 20px;padding-top: 10px;"><a href="##"
+                                            class="mw-redirect" title="Foundry">制造</a>条件
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="" title="现金"><img
+                                                alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>25,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">外甲<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">机翼<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">系统<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>4
+                                    </td>
+                                    <td style="text-align:left;">时间: 12小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><small><a href="/wiki/Market" class="mw-redirect"
+                                                title="Market">商店</a>售价: <a href="/wiki/Platinum" title="白金"><img
+                                                    alt="白金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                    width="20" height="20"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 275
+                                        </small></td>
+                                    <td colspan="3"><small><a href="/wiki/Blueprint" class="mw-redirect"
+                                                title="Blueprint">蓝图</a>售价: <a href="/wiki/Credits" title="现金"><img
+                                                    alt="现金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/22px-Credits64.png"
+                                                    width="22" height="22"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/33px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/44px-Credits64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 15,000
+                                        </small></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">外甲
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>900
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>3,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,500
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">机翼
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Neurodes"
+                                            title="神经元"><img alt="神经元"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/32px-Neurode64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/48px-Neurode64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/77/Neurode64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>4,200
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">系统
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Control_Module"
+                                            title="控制模块"><img alt="控制模块"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/32px-ControlModule64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/48px-ControlModule64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/e/e1/ControlModule64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Salvage"
+                                            title="回收金属"><img alt="回收金属"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/32px-Salvage64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/48px-Salvage64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/f/ff/Salvage64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>6,700
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>2,800
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div id="fabr-Itzal" class="notshow">
+                        <table class="foundrytable full-width-xs">
+                            <tbody>
+                                <tr>
+                                    <th colspan="6" style="height: 20px;padding-top: 10px;"><a href="##"
+                                            class="mw-redirect" title="Foundry">制造</a>条件
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="" title="现金"><img
+                                                alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>25,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">外甲<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">机翼<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">系统<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>4
+                                    </td>
+                                    <td style="text-align:left;">时间: 12小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><small><a href="/wiki/Market" class="mw-redirect"
+                                                title="Market">商店</a>售价: <a href="/wiki/Platinum" title="白金"><img
+                                                    alt="白金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                    width="20" height="20"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 275
+                                        </small></td>
+                                    <td colspan="3"><small><a href="/wiki/Blueprint" class="mw-redirect"
+                                                title="Blueprint">蓝图</a>售价: <a href="/wiki/Credits" title="现金"><img
+                                                    alt="现金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/22px-Credits64.png"
+                                                    width="22" height="22"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/33px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/44px-Credits64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 15,000
+                                        </small></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">外甲
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>900
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>3,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,500
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">机翼
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Neurodes"
+                                            title="神经元"><img alt="神经元"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/32px-Neurode64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/48px-Neurode64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/77/Neurode64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>4,200
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">系统
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Control_Module"
+                                            title="控制模块"><img alt="控制模块"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/32px-ControlModule64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/48px-ControlModule64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/e/e1/ControlModule64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Salvage"
+                                            title="回收金属"><img alt="回收金属"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/32px-Salvage64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/48px-Salvage64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/f/ff/Salvage64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>6,700
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>2,800
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="fabr-Odonata" class="notshow">
+                        <table class="foundrytable full-width-xs">
+                            <tbody>
+                                <tr>
+                                    <th colspan="6" style="height: 20px;padding-top: 10px;"><a href="##"
+                                            class="mw-redirect" title="Foundry">制造</a>条件
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="" title="现金"><img
+                                                alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>25,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">外甲<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">机翼<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;">系统<br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>4
+                                    </td>
+                                    <td style="text-align:left;">时间: 12小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 50
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><small><a href="/wiki/Market" class="mw-redirect"
+                                                title="Market">商店</a>售价: <a href="/wiki/Platinum" title="白金"><img
+                                                    alt="白金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                    width="20" height="20"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 275
+                                        </small></td>
+                                    <td colspan="3"><small><a href="/wiki/Blueprint" class="mw-redirect"
+                                                title="Blueprint">蓝图</a>售价: <a href="/wiki/Credits" title="现金"><img
+                                                    alt="现金"
+                                                    src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/22px-Credits64.png"
+                                                    width="22" height="22"
+                                                    srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/33px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/44px-Credits64.png 2x"
+                                                    data-file-width="64" data-file-height="64"></a> 15,000
+                                        </small></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">外甲
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>900
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>3,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,500
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">机翼
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Alloy_Plate"
+                                            title="合金板"><img alt="合金板"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/32px-AlloyPlate64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/a/ac/AlloyPlate64.png/48px-AlloyPlate64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/a/ac/AlloyPlate64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5,600
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Neurodes"
+                                            title="神经元"><img alt="神经元"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/32px-Neurode64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/77/Neurode64.png/48px-Neurode64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/77/Neurode64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>5
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Polymer_Bundle"
+                                            title="聚合物束"><img alt="聚合物束"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/32px-PolymerBundle64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/0/09/PolymerBundle64.png/48px-PolymerBundle64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/0/09/PolymerBundle64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>4,200
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">系统
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Credits"
+                                            title="现金"><img alt="现金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/26px-Credits64.png"
+                                                width="26" height="26"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/39px-Credits64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/b/b1/Credits64.png/52px-Credits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>15,000
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Control_Module"
+                                            title="控制模块"><img alt="控制模块"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/32px-ControlModule64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/e/e1/ControlModule64.png/48px-ControlModule64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/e/e1/ControlModule64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>1
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Nitain_Extract"
+                                            title="泥炭萃取物"><img alt="泥炭萃取物"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/32px-DENitainExtract2.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/48px-DENitainExtract2.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/9/9c/DENitainExtract2.png/64px-DENitainExtract2.png 2x"
+                                                data-file-width="312" data-file-height="312"></a><br>2
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Salvage"
+                                            title="回收金属"><img alt="回收金属"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/32px-Salvage64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/f/ff/Salvage64.png/48px-Salvage64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/f/ff/Salvage64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>6,700
+                                    </td>
+                                    <td rowspan="2" style="height:100px; width:100px;"><a href="/wiki/Circuits"
+                                            title="电路"><img alt="电路"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/32px-Circuits64.png"
+                                                width="32" height="32"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/7/72/Circuits64.png/48px-Circuits64.png 1.5x, https://huiji-public.huijistatic.com/warframe/uploads/7/72/Circuits64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a><br>2,800
+                                    </td>
+                                    <td style="text-align:left;">时间: 6小时
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left;">加速: <a href="/wiki/Platinum" title="白金"><img alt="白金"
+                                                src="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/20px-Platinum64.png"
+                                                width="20" height="20"
+                                                srcset="https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/30px-Platinum64.png 1.5x, https://huiji-thumb.huijistatic.com/warframe/uploads/thumb/1/15/Platinum64.png/40px-Platinum64.png 2x"
+                                                data-file-width="64" data-file-height="64"></a> 25
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var cardList = ["#card-Amesha", "#card-Elytron", "#card-Itzal", "#card-Odonata"]
+    var viewList = ["#view-Amesha", "#view-Elytron", "#view-Itzal", "#view-Odonata"]
+    var skillList = ["#skill-Amesha", "#skill-Elytron", "#skill-Itzal", "#skill-Odonata"]
+    var fabrList = ["#fabr-Amesha", "#fabr-Elytron", "#fabr-Itzal", "#fabr-Odonata"]
+    function $(arg) {
+        // 简化获取标签
+        var mold = arg[0];
+        var tag = "";
+        if (mold == ".") {
+            tag = document.getElementsByClassName(arg.substring(1));
+        } else if (mold == "#") {
+            tag = document.getElementById(arg.substring(1));
+        } else {
+            tag = document.getElementsByTagName(arg);
+        }
+        return tag;
+    };
+    function canMove(th) {
+        // 四个Archwing切换
+        var archw = th.className;
+        var card = "#card-" + archw;
+        var view = "#view-" + archw;
+        var skill = "#skill-" + archw;
+        var fabr = "#fabr-" + archw;
+        for (var i in cardList) {
+            if (card == cardList[i]) {
+                $(cardList[i]).className = "";
+            } else {
+                $(cardList[i]).className = "notshow";
+            }
+        };
+
+        for (var i in viewList) {
+            if (view == viewList[i]) {
+                $(viewList[i]).className = "";
+            } else {
+                $(viewList[i]).className = "notshow";
+            }
+        };
+        for (var i in skillList) {
+            $(skillList[i]).className = "notshow";
+        };
+        for (var i in skillList) {
+            $(fabrList[i]).className = "notshow";
+        };
+    };
+    function canReMove(arg) {
+        // 概述、技能。、制造条件切换
+        for (var i in cardList) {
+            if ($(cardList[i]).className == "") {
+                var archw = cardList[i].substring(6);
+            }
+        }
+        var view = "#view-" + archw;
+        var skill = "#skill-" + archw
+        var fabr = "#fabr-" + archw
+        if (arg == "view") {
+            for (var i in skillList) {
+                $(skillList[i]).className = "notshow";
+                $(fabrList[i]).className = "notshow";
+                if (view == viewList[i]) {
+                    $(viewList[i]).className = "";
+                } else {
+                    $(viewList[i]).className = "notshow";
+                }
+            };
+        } else if (arg == "skill") {
+            for (var i in skillList) {
+                $(viewList[i]).className = "notshow";
+                $(fabrList[i]).className = "notshow";
+                if (skill == skillList[i]) {
+                    $(skillList[i]).className = "";
+                } else {
+                    $(skillList[i]).className = "notshow";
+                }
+            };
+        } else if (arg == "fabr") {
+            for (var i in fabrList) {
+                $(viewList[i]).className = "notshow";
+                $(skillList[i]).className = "notshow";
+                if (fabr == fabrList[i]) {
+                    $(fabrList[i]).className = "";
+                } else {
+                    $(fabrList[i]).className = "notshow";
+                }
+            };
+        }
+    }
+</script>
+</html>

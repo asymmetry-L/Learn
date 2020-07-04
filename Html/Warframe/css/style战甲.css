@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../image/Simple-gray-texture-l.jpg);
+}
+.box{
+    width: 100%;
+}
+.head{
+    width: 100%;
+    height: 50px;
+    background-size: 100%;
+    background-color: rgba(248, 248, 248, 0.959);
+}
+#img1{
+    /* width: 25%; */
+    height: 50px;
+    /* position: relative; */
+    top: 8px;
+}
+.div00{
+    width: 20%;
+    height: 60px;
+    margin-left: 72px;
+    border-bottom: 1px solid rgb(202, 198, 198);
+    position: relative;
+}
+h1{
+    display: block;
+    padding: 12px;
+    text-align: left;
+    font-size: 35px;
+    font-family: 宋体;
+    font-weight: bold;
+    color: rgba(17, 13, 39, 0.733); 
+}
+h2{
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+    font-family: algerian;
+    font-weight: normal;
+    color: rgb(77, 88, 151);
+}
+a{
+    text-decoration: none;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+.div01{
+    width: 75%;
+    height: 1300PX;
+    margin: 0 auto;
+    padding: 40px;
+    border-top: 1px solid rgb(202, 198, 198);
+    position: relative;
+    
+}
+.div02{
+    width: 15%;
+    height: 150px;
+    float: left;
+    margin: 6px;
+}
+#img2{
+    width: 100%;
+    height: 100%;
+}
+p{
+    display: block;
+    width: 100%;
+    height: 26px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding-top: 4px;
+    position: relative;
+    top: -34px;
+    background-color: #677b8ba4;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#wftitle:hover p{
+   background-color: white;
+   color: #131a14d5;
+}
+p1{
+    display: block;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+h3{
+    display: block;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+    color: rgb(91, 184, 228);
+    font-size: 25px;
+}
+.div03{
+    width: 60%;
+    height: 145px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d6d8d6; 
+    background-color: rgba(231, 230, 230, 0.808);
+}
+.div04{
+    width: 22%;
+    padding: 8px;
+    text-align: center;
+    color: rgb(36, 96, 185);
+    font-size: 15px;
+    float: left;
+}
+#img3{
+    width: 181px;
+    height: 124px;
+}
+

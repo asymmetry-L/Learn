@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("..\\Image\\Warframe0005.png");
+    background-size: 100% 750px;
+    text-align: right;
+
+}
+
+.menu {
+    color: #fff;
+    float: right;
+    display: initial;
+    width: 450px;
+    height: 540px;
+    margin: 90px 100px;
+}
+
+.menu ul li {
+    line-height: 46px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu .logo img {
+    width: 450px;
+}
+
+.navTag a {
+    display: inline-block;
+    width: 50%;
+    color:#4e7ca1;
+}
+/* .navTag a:hover {
+    color: #fff;
+} */
+.navTag a:hover {
+    font-size: 40px;
+    color: #f4ce69;
+    background-color: #a7a8bd50;
+    border-radius: 5px;
+}

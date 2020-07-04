@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    height: 714px;
+    background-image: url(../image/Simple-gray-texture-l.jpg);
+}
+a,i{
+    font-style: normal;
+    text-decoration: none;
+}
+.notshow{
+    display: none;
+}
+
+.head{
+    background-color: aliceblue;
+    height: 50px;
+}
+.head a img {
+    height: 50px;
+}
+
+.body .left {
+    /* margin-top: 40px; */
+    text-align: center;
+    width: 18%;
+    /* height: 600px; */
+    float: left;
+}
+.body .left div {
+    background-color: #cccccc;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    padding: 6px 24px;
+    margin: -2px 0;
+}
+.body .left div:hover{
+    border-radius: 10px;
+    background-color: #134857;
+}
+.body .left i {
+    color: #74759b;
+    font-size: 20px;
+}
+.body .left img {
+    width: 200px;
+}
+
+.body .right {
+    float: left;
+    /* width: 1267px; */
+    width: 82%;
+    text-align: center;
+}
+.body .right .archw-name {
+    font-size: 30px;
+    background-color: #3a3a3a;
+    color: #66a9c9;
+}
+.body .right .right-top {
+    clear: both;
+    background-color: #134857;
+    width: 100%;
+    text-align: center;
+}
+.body .right .right-top ul {
+    display: inline-block;
+    text-align: center;
+}
+.body .right .right-top li {
+    padding-top: 2px;
+    float: left;
+    width: 100px;
+    color: #a7a8bd;
+    font-size: 18px;
+}
+.body .right .right-top li:hover {
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+
+.body .right .archw-card {
+    float: right;
+    /* height: 500px; */
+    /* width: 30%; */
+}
+.archw-card .infobox{
+    background-color: #d4d4d4;
+    border: 1px solid #cccccc;
+    color: #1c1c1c;
+    width: 360px;
+    height: 610px;
+    clear: right;
+    font-size: 20px;
+    margin: 0 0 0px 2em;
+    padding: 0;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.archw-card .infobox tbody{
+    display: table-row-group;
+}
+.archw-card .infobox tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+
+}
+.archw-card .infobox .name{
+    color: #eeeeee;
+    background: none repeat scroll 0% 0% #3a3a3a;
+    font-size: 30px;
+    padding: 0.618em;
+    text-align: center;
+}
+.archw-card .infobox .image{
+    height: 200px;
+    text-align: center;
+    padding: 0.5em;
+}
+.archw-card .infobox .category{
+    background: none repeat scroll 0% 0% #3a3a3a;
+    color: #eeeeee;
+}
+.archw-card .infobox .left{
+    background: none repeat scroll 0% 0% #3a3a3a;
+    color: #eeeeee;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 22px;
+    /* padding-top: 1px; */
+    font-weight: bold;
+    /* line-height: 1px; */
+    width: 30%;  
+    height: 38px;
+}
+.archw-card .infobox .left a {
+    height: 38px;
+    line-height: 4px;
+    color: #afd8ff !important;
+}
+.archw-card .infobox td {
+    margin-top: 0px;
+}
+.archw-card .infobox .right{
+    text-align: center;
+    width: 60%;
+}
+
+
+.overview h4 {
+    height: 30px;
+    text-align: left;
+    padding-left: 5px;
+    color: #eee;
+    font-size: 20px;
+    background: none repeat scroll 0% 0% #3a3a3a;
+}
+.overview li {
+    padding-left: 20px;
+    list-style: circle;
+}
+.overview p {
+    text-indent: 2em;
+    padding-left: 10px;
+}
+.overview span {
+    padding-left: 5px;
+    color: #66a9c9;
+    font-weight: bold;
+    font-size: 18px;
+}
+.overview .view,
+.overview .update{
+    height: 250px;
+    text-align: left;
+}
+
+.skill .row{
+    height: 0px;
+    position: relative;
+    left: -180px;
+    top: -608px;
+}
+.skill .row img{
+    padding: 1px;
+    /* float: left; */
+    width: 70.5%;
+}
+.skill .row .col-sm-2 {
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0 8px;
+}
+
+.fabrication {
+    text-align: center;
+}
+.foundrytable {
+    margin: 30px 120px;
+    float: left;
+    border-radius: 2px;
+    background-color: #d1c2d3;
+    /* width: 420px; */
+    text-align: center;
+    max-width: calc(100%-305px);
+    border-collapse: collapse;
+    border-color: #cccccc;
+}
+.foundrytable td{
+    border: 1px solid #afd8ff;
+}
