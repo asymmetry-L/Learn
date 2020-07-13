@@ -12,7 +12,8 @@ python 编写代码时建议遵循[PEP8](https://legacy.python.org/dev/peps/pep-
 
 ##### 变量命名规则
 
-1.不能使用 python 关键字，即标记不能提前被占用，python 关键字包括：
+1.  不能使用 python 关键字，即标记不能提前被占用，python 关键字包括：
+
 |||||||||
 |---|---|---|---|---|---|---|---|
 |'and'|'as'| 'assert'| 'break'| 'class'| 'continue'| 'def'| 'del'|
@@ -20,7 +21,9 @@ python 编写代码时建议遵循[PEP8](https://legacy.python.org/dev/peps/pep-
 | 'if'| 'import'| 'in'| 'is'| 'lambda'| 'not'| 'or'| 'pass'|
 | 'print'| 'raise'| 'return'| 'try'| 'while'| 'with'| 'yield'|
 
-2.变量名的**第一个字符**不能为**数字** 3.变量名只能是**字母、数字、下划线**(\_)的任意组合
+2.  变量名的**第一个字符**不能为**数字** 
+
+3.  变量名只能是**字母、数字、下划线**(\_)的任意组合
 
 #### 赋值
 
