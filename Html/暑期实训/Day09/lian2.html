@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            height: 100%;
+            text-align: center;
+            background-color: #813c85;
+        }
+        .f{
+            border-radius: 10px;
+            margin: 9% 30%;
+            text-align: left;
+            height: 440px;
+            width: 600px;
+            background-color: #d1c2d3;
+        }
+        .tip{
+            text-align: center;
+            margin: 0px;
+            font-size: 15px;
+            background-color: #815c94;
+        }
+        .t1{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            }
+        .button{
+            text-align: center;
+        }
+        .button input{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            border-radius: 10px;
+            height: 30px;
+            width: 100px;
+        }
+        p {
+            margin: 10px 100px 0 100px;
+            font-size: 13px;
+        }
+        textarea{
+            /* float: right; */
+            text-align: start;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="f">
+        <p class="tip t1">请完成以下表单</p>
+        <div>
+            <form action="" method="post">
+                <p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 <input type="text" name="userName" id=""></p>
+                <p>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码 <input type="password" name="pwd" id=""></p>
+                <p>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别 
+                    <input type="radio" name="sex" id="">男&nbsp;
+                    <input type="radio" name="sex" id="">女
+                </p>
+                <p>电子邮件 <input type="email" name="" id=""></p>
+                <p>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业 
+                    <select name="" id="">
+                        <option value="">请选</option>
+                        <option value="">教育/研究</option>
+                        <option value="">艺术/设计</option>
+                        <option value="">法律相关</option>
+                        <option value="">行政管理</option>
+                        <option value="">传播/传媒</option>
+                    </select>
+                </p>
+                <p>
+                    个人爱好 
+                    
+                    <input type="checkbox" name="" id="">电脑网络
+                    <input type="checkbox" name="" id="">影视娱乐
+                    <input type="checkbox" name="" id="">棋牌游戏
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="" id="">读书读报
+                    <input type="checkbox" name="" id="">美酒佳肴
+                    <input type="checkbox" name="" id="">绘画书法
+                    
+                </p>
+                <p>
+                    <span style="vertical-align: top;">留言内容</span>
+                    <textarea name="" id="" cols="40" rows="4"></textarea>
+                </p><br>
+
+                <p class="tip">填写完成后，选择下面的提交按钮提交表单</p>
+                <p class="button">
+                    <input type="submit" value="提交">
+                    <input type="reset" value="重置">
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

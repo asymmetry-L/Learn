@@ -1,0 +1,25 @@
+.logo{
+    margin: 15px 0 0 55px;
+    width: 10%;
+}
+.nav{
+    margin: 20px 50px 0 100px;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+}
+.bg_img{
+    margin: 25px 0 0 50px;
+}
+.formm{
+    font-size: 10px;
+    height: 400px;
+    width: 290px;
+    border: 1px solid black;
+}
+.formm .top{
+    border-bottom: 1px solid black;
+    line-height: 86px;
+    text-align: center;
+    font-weight: bolder;
+}

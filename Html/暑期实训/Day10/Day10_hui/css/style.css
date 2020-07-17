@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+.out {
+  height: 100%;
+  width: 40%;
+}
+.logo {
+    height: 80px;
+    background-color: green;
+}
+.lg{
+    border: 1px solid #aa4455;
+    margin: 0 100px;
+    color: red;
+    font-weight: bold;
+    height: 50px;
+    width: 20%;
+    background-color: white;
+}
+.nav {
+    height: 60px;
+    background-color: blue;
+}
+.body_top{
+    height: 200px;
+}
+.guoji{
+    float: left;
+    height: inherit;
+    width: 20%;
+    background-color: orange;
+}
+.guonei{
+    float: left;
+    height: inherit;
+    width: 30%;
+    background-color: aquamarine;
+}
+.caijing{
+    float: left;
+    height: inherit;
+    width: 50%;
+    background-color: chartreuse;
+}
+.body_middle{
+    height: 80px;
+    background-color: darkmagenta;
+}
+.body_bottom{
+    height: 200px;
+}
+.tiyu{
+    height: inherit;
+    width: 30%;
+    float: left;
+    background-color: darksalmon;
+}
+.yule{
+    height: inherit;
+    width: 40%;
+    background-color: dodgerblue;
+    float: left;
+}
+.shejian{
+    height: inherit;
+    width: 30%;
+    background-color: indigo;
+    float: left;
+}
+.flink{
+    height: 51px;
+    background-color: darkkhaki;
+}
+.copy{
+    height: 60px;
+    background-color: lightslategray;
+}

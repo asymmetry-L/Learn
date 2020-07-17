@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                 </form>
             </div>
             <div class="image">
-                <img src="https://ae04.alicdn.com/kf/H271531b517014a13bad8fb9459bc9890N.png" alt="">
+                <img src="./image/wallhaven-96yzg8.png" alt="">
             </div>
         </div>
     </div>
@@ -69,15 +69,15 @@
         var Rp = document.logForm.rePassWord;
 
         var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
-        if (El.value == "" && $("#s2").className =="active") {
+        if (El.value == "" && $("#s2").className == "active") {
             alert("邮箱不能为空!");
             El.focus();
             return false;
-        } else if (!reg.test(El.value) && $("#s2").className =="active"){
+        } else if (!reg.test(El.value) && $("#s2").className == "active") {
             alert("输入不合法!");
             El.focus();
             return false;
-        }; 
+        };
         if (Un.value == "") {
             alert("用户名不能为空!");
             Un.focus();
@@ -85,7 +85,7 @@
             return false;
         };
         // var p = e;
-        if (Psw.value.length < 6 && $("#s2").className =="active") {
+        if (Psw.value.length < 6 && $("#s2").className == "active") {
             alert("密码较短，安全性低!");
             Psw.focus();
             return false;
@@ -94,7 +94,7 @@
             Psw.focus();
             return false;
         };
-        if (Rp.value != Psw.value && $("#s2").className =="active") {
+        if (Rp.value != Psw.value && $("#s2").className == "active") {
             alert("密码验证失败!");
             Rp.focus();
             return false;
@@ -120,9 +120,9 @@
     //             return false;
     //         }
     //         if (condition) {
-                
+
     //         } else {
-                
+
     //         }
     //     }
     // }

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.top .t-u span{
+    letter-spacing: 1em;
+    color: red;
+    font-weight: bold;
+    line-height: 50px;
+    float: right;
+}
+.top .t-d{
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    color: #1677b3;
+    width: 100%;
+    height: 70px;
+    background-color: #baccd9;
+    border-top: 5px solid #2376b7;
+}
+.top .t-d .on{
+    color: red;
+}
+.middle {
+    text-align: center;
+}
+.middle p{
+    text-align: right;
+}
+.middle p a{
+    margin: 10px 10px;
+}
+.middle table .star{
+    color: red;
+}
+.middle table{
+    text-align: center;
+    display: inline-block;
+    width: 70%;
+}
+
+.middle table td{
+    line-height: 34px;
+    text-align: center;
+    width: 35%;
+    height: 20%;
+}
+.middle table td p{
+    margin: 0 20%;
+}
+.middle table .tips{
+    margin: 0 20px;
+    background-color: beige;
+}
+.middle table .k{
+    color: red;
+    font-weight: bold;
+    background-color: #baccd9;
+}
+.middle table .button input{
+    height: 30px;
+    width: 20%;
+    margin: 10px ;
+}
+.bottom hr{
+    margin-top: 30px;
+    border: 3px solid #2376b7;
+}
+.bottom{
+    color: #1677b3;
+    font-size: 18px;
+    text-align: center;
+}
+.bottom p{
+    color: black;
+}
+.bottom span{
+    color: red;
+}

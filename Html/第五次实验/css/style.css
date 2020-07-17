@@ -6,7 +6,7 @@ a {
   list-style: none;
   text-decoration: none;
 }
-body{
+body {
   height: 100%;
   background-image: linear-gradient(to right, #16a085, #f4d03f);
 }
@@ -80,26 +80,23 @@ body{
 /* 界面 */
 .container {
   text-align: center;
-  margin: 107px 249.13px;
+  margin: 107px 342.63px;
   position: relative;
-  /* width: 1020.74px; */
+  width: 850.74px;
 }
-.container .image{
-  height: 500px;
-  float: left;
-}
-.container .image img{
+
+.container .image img {
   height: 500px;
   float: left;
   border-radius: 20px;
 }
 .container .panel {
   height: 500px;
-  width: 970.74px;
+  width: 850.74px;
   background-color: #899857;
   border-radius: 20px;
 }
-.container .panel .content-login{
+.container .panel .content-login {
   margin: 0 0 0 30px;
   width: 200px;
   height: 500px;
