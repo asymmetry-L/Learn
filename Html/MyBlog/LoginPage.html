@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./img/icon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="content-login">
+                <div class="switch">
+                    <span onclick="canLanding()" id="s1" class="active">Landing</span><span>/</span><span
+                        onclick="canRegister()" id="s2">Register</span>
+                </div>
+                <form action="http://localhost:8080/" method="GET" name="logForm" onsubmit="return isForm(this)">
+                    <div id="inputEmail" class="conceal"><input type="text" name="userMail" placeholder="E-mail"></div>
+                    <div id="inputUn"><input type="text" name="userName" placeholder="Username"></div>
+                    <div id="inputPsw"><input type="password" name="passWord" placeholder="Password"></div>
+                    <div id="inputRe" class="conceal"><input type="password" name="rePassWord" placeholder="Repeat">
+                    </div>
+                    <span>Forget?</span>
+                    <br>
+                    <div class="button">
+                        <input id="button" type="submit" value="登录" onsubmit="isForm()">
+                    </div>
+                </form>
+            </div>
+            <div class="image">
+                <img src="./img/wallhaven-96yzg8.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function $(arg) {
+        var mold = arg[0];
+        var tag = "";
+        if (mold == ".") {
+            tag = document.getElementsByClassName(arg.substring(1));
+        } else if (mold == "#") {
+            tag = document.getElementById(arg.substring(1));
+        } else {
+            tag = document.getElementsByTagName(arg);
+        }
+        return tag;
+    };
+    function canLanding() {
+        $("#s1").className = "active"
+        $("#s2").className = ""
+        $("#inputEmail").className = "conceal";
+        $("#inputRe").className = "conceal";
+        $("#button").value = "登录";
+    };
+    function canRegister() {
+        $("#s2").className = "active"
+        $("#s1").className = ""
+        $("#inputEmail").className = "";
+        $("#inputRe").className = "";
+        $("#button").value = "注册";
+    };
+    var userList = { "123456": "654321" };
+    var emailList = {};
+
+    function isForm(field) {
+        var El = document.logForm.userMail;
+        var Un = document.logForm.userName;
+        var Psw = document.logForm.passWord;
+        var Rp = document.logForm.rePassWord;
+        var reg = new RegExp("^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$");
+        if ($('#button').value == '登录') {
+            if (Un.value == "") {
+                alert("用户名不能为空!");
+                Un.focus();
+                // un.focus();
+                return false;
+            } else if (userList[Un.value] != Psw.value) {
+                alert("用户名或密码错误！")
+                return false;
+            } else {
+                return true;
+            }
+        }
+        if ($('#button').value == '注册') {
+            // var p = e;
+            if (El.value == "" && $("#s2").className == "active") {
+                alert("邮箱不能为空!");
+                El.focus();
+                return false;
+            } else if (!reg.test(El.value) && $("#s2").className == "active") {
+                alert("输入不合法!");
+                El.focus();
+                return false;
+            } else if (Psw.value.length < 6 && $("#s2").className == "active") {
+                alert("密码较短，安全性低!");
+                Psw.focus();
+                return false;
+            } else if (Psw.value == "") {
+                alert("密码不能为空!");
+                Psw.focus();
+                return false;
+            } else if (Rp.value != Psw.value && $("#s2").className == "active") {
+                alert("密码验证失败!");
+                Rp.focus();
+                return false;
+            } else {
+                userList[Un.value] = Psw.value;
+                emailList[Un.value] = El.value;
+                Psw.value='';
+                El.value='';
+                Un.value='';
+                Rp.value='';
+                console.log(userList);
+                canLanding();
+                return false;
+            }
+        }
+    }
+</script>
+
+</html>

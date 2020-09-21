@@ -35,7 +35,7 @@ public class Day02 {
 		}
 //		System.out.println(month/3);
 		if(month>=1&&month<=12) {
-			switch(month/3) {
+			switch(month/4) {
 			case 1:
 				System.out.println("´ºÌì");
 				break;

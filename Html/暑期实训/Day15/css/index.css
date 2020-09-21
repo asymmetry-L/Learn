@@ -1,0 +1,33 @@
+span{
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    background-color: #aaaaaa;
+    text-align: center;
+}
+span:hover{
+    cursor: pointer;
+    border: 2px solid #333333;
+}
+.topic{
+    text-align: center;
+    border: 2px solid #c08eaf;
+    border-radius: 5px;
+}
+.topic{
+    float: left;
+    width: 200px;
+    height: 300px;
+}
+.topic_4{
+    width: 540px;
+}
+.topic_5 #i,
+.topic_5 #j{
+    width: 50px;
+}
+.topic_5 span{
+    width: 90px;
+}

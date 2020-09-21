@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.panel{
+    margin: 100px 5px;
+    overflow: hidden;
+    height: 450px;
+    width: 280px;
+    float: left;
+    border: 2px solid slateblue;
+}
+.topic_1 span{
+    display: inline-block;
+    margin: 10px;
+}
+.topic_1 input{
+    height: 20px;
+    margin-right: 0;
+}
+.topic_1 button{
+    margin-left: 0;
+    height: 24px;
+    width: 50px;
+}
+
+
+.topic_2 input{
+    margin: 10px 5%;
+    display: inline-block;
+    width: 90%;
+    height: 60px;
+}
+.topic_2 table{
+    margin: 0 auto;
+    text-align: center;
+}
+.topic_2 button{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid burlywood;
+    background-color: antiquewhite;
+    font-size: 18px;
+    font-weight: bold;
+}

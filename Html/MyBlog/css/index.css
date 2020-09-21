@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.nav-top {
+  height: 80px;
+  width: 1228.8px;
+  /* position: fixed; */
+  margin: 10px auto;
+  top: 10px;
+  left: 10%;
+  z-index: 9999;
+  /* background-color: aquamarine; */
+}
+.nav-top-left {
+  float: left;
+  width: 20%;
+  border-radius: 10px;
+  height: 100%;
+  border: 5px solid #aaaaaa;
+  box-sizing: border-box;
+  /* box-shadow: 0px 0px 15px #51c4d370; */
+  background-color: #333333;
+  line-height: 20%;
+  position: relative;
+}
+.nav-top-left .logo img {
+  float: left;
+  width: 20%;
+  margin: 5.5% 0%;
+}
+.nav-top-left .logo b {
+  float: left;
+  display: block;
+  margin-top: 15%;
+  margin-left: 3%;
+  text-align: right;
+  color: #fca106;
+  font-size: 28px;
+}
+
+.nav-link {
+  float: left;
+  height: 60%;
+  width: 3%;
+  margin: 1% 0;
+  background-color: #ffffff00;
+  border-top: 5px solid #d8591690;
+  border-bottom: 5px solid #d8591690;
+  box-sizing: border-box;
+}
+.nav-top-right {
+  float: left;
+  width: 77%;
+  border-radius: 10px;
+  height: 100%;
+  border: 5px solid #aaaaaa;
+  box-sizing: border-box;
+  /* box-shadow: 0px 0px 15px #51c4d370; */
+  background-color: #333333;
+}
+/* 搜索框 */
+.search {
+  margin-top: 2%;
+  position: relative;
+  float: left;
+  width: 54%;
+}
+.search .search-box {
+  outline: none;
+  text-indent: 10px;
+  color: #fca10670;
+  margin-left: 3%;
+  height: 35px;
+  width: 60%;
+  background-color: #55555550;
+  border-radius: 17.25px;
+  border: none;
+}
+.search .search-btn {
+  outline: none;
+  height: 35px;
+  width: 10%;
+  box-sizing: border-box;
+  border-top-right-radius: 17.25px;
+  border-bottom-right-radius: 17.25px;
+  background: url("../img/icon/搜索.png") no-repeat center top;
+  background-size: 35px;
+  border: 1px solid #fca106;
+  position: absolute;
+  left: 53%;
+}
+.search .search-btn:active {
+  border: 1px solid #fca10650;
+}
+
+/* 顶部导航栏按钮 */
+.btn-top {
+  width: 30%;
+  height: 70px;
+  float: left;
+  margin-left: 10%;
+}
+.btn-top .friend-link,
+.btn-top .grumble,
+.btn-top .login {
+  float: right;
+  height: 35px;
+  margin-top: 7%;
+}
+.mssg{
+  display: none;
+  position: absolute;
+  height: 200px;
+  width: 260px;
+  top: 80px;
+  right: 200px;
+  border-radius: 20px;
+  color: #333333;
+  background-color: #aaaaaa70;
+  /* left: 50px; */
+}
+.mssg p{
+  display: inline-block;
+  margin-left: 10px;
+}
+.frdLink{
+  display: none;
+  position: absolute;
+  height: 200px;
+  width: 260px;
+  top: 60px;
+  right: 250px;
+  border-radius: 20px;
+  background-color: #aaaaaa70;
+  /* left: 50px; */
+}
+.frdLink p{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.btn-top img {
+  width: 50%;
+}
+/* github链接 */
+.nav-top-right .github {
+  float: right;
+  height: 0;
+  width: 0;
+  border-top: 50px solid #aaaaaa;
+  border-left: 50px solid transparent;
+  position: relative;
+}
+.nav-top-right .github a {
+  display: block;
+  height: 30px;
+  width: 30px;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: 22px;
+  right: -1px;
+}
+.nav-top-right .github a img {
+  height: 30px;
+  width: 30px;
+}
+
+.body {
+  width: 1228.8px;
+  margin: 30px auto 0 auto;
+  /* margin-top: 300px; */
+  height: 550px;
+  box-sizing: border-box;
+}
+.body .tag {
+  float: left;
+  height: 100%;
+  width: 72%;
+}
+.body .tag .tag-nav {
+  /* overflow: hidden; */
+  height: 12%;
+  width: 100%;
+  background-color: #333333;
+  border: 5px solid #aaaaaa;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.tag .tag-nav #skill-tag {
+  /* overflow: hidden; */
+  width: 100%;
+  display: inline-block;
+}
+.tag .tag-nav #skill-tag .font {
+  color: #fca106;
+}
+.tag .tag-nav #skill-tag div {
+  float: left;
+  list-style: none;
+  display: block;
+  height: 56px;
+  /* width: 20%; */
+  line-height: 56px;
+  font-size: 25px;
+  color: #fca10650;
+  margin: 0 2.1%;
+}
+.tag .tag-nav #last {
+  float: left;
+}
+.tag .tag-nav #next {
+  float: right;
+}
+.tag .tag-nav #last:hover,
+.tag .tag-nav #next:hover {
+  background-color: #55555555;
+  border-radius: 50%;
+}
+.tag .tag-nav #skill-tag img {
+  height: 56px;
+}
+
+.body .tag .tag-link {
+  /* float: left; */
+  width: 60%;
+  height: 3%;
+  margin: 0 auto;
+  background-color: #ffffff00;
+  border-left: 5px solid #d8591690;
+  border-right: 5px solid #d8591690;
+  box-sizing: border-box;
+}
+.body .tag .tag-main {
+  height: 85%;
+  width: 100%;
+  background-color: #333333;
+  border: 5px solid #aaaaaa;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.body .tag .tag-main .hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.body .tag .tag-main div {
+  height: 100%;
+}
+.body .tag .tag-main a {
+  text-decoration: none;
+}
+.body .tag .tag-main .cont {
+  height: 15%;
+  background-color: #aaaaaa50;
+  margin: 1.5% 1%;
+  border-radius: 34px;
+}
+.body .tag .tag-main .cont img {
+  float: left;
+  height: 80%;
+  margin: 0.6% 0 0 0.8%;
+  border: 2px solid #fca106;
+  border-radius: 50%;
+}
+.body .tag .tag-main .cont .title {
+  font-size: 20px;
+  width: 80%;
+  color: #fca106;
+  font-weight: bold;
+  display: block;
+  margin: 0.5% 0 0 3%;
+}
+.body .tag .tag-main .cont p {
+  margin: 0.1% 0 0 3%;
+  float: left;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+.body .nav-sdb {
+  float: left;
+  height: 100%;
+  width: 25%;
+  margin-left: 3%;
+  box-sizing: border-box;
+}
+.body .nav-sdb .sdb1 {
+  width: 100%;
+  height: 25%;
+  background-color: #333333;
+  border: 5px solid #aaaaaa;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.body .nav-sdb .sdb1 img {
+  float: left;
+  width: 30%;
+  margin: 6% 2%;
+  border-radius: 50%;
+  border: 2px solid #fca106;
+}
+.body .nav-sdb .sdb1 .msg {
+  float: left;
+  margin-top: 2%;
+  margin-left: 4%;
+  width: 60%;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+.body .nav-sdb .sdb1 .msg p {
+  display: inline-block;
+  margin-top: 1%;
+  border-bottom: 1px dashed #fca106;
+}
+
+.body .nav-sdb .sdb2 {
+  width: 100%;
+  height: 15%;
+  margin-top: 5%;
+  background-color: #333333;
+  border: 5px solid #aaaaaa;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* 时间的样式 */
+.body .sdb2 .date {
+  float: left;
+  margin: 7.45px 10px;
+  font-weight: bold;
+}
+.body .sdb2 .date .year {
+  color: #aaaaaa;
+  font-size: 25px;
+}
+.body .sdb2 .date .day {
+  color: #aaaaaa;
+  font-size: 19px;
+}
+.body .sdb2 .time {
+  float: left;
+  border-top: 2px solid #fca106;
+  border-bottom: 2px solid #fca106;
+  /* height: 100%; */
+  color: #aaaaaa;
+  font-size: 41px;
+  margin: 3% 0;
+  /* letter-spacing: 0.2em; */
+  font-weight: bold;
+}
+
+.body .nav-sdb .sdb3 {
+  margin-top: 5%;
+  width: 100%;
+  height: 55%;
+  background-color: #333333;
+  border: 5px solid #aaaaaa;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.nav-sdb .sdb3 span {
+  display: inline-block;
+  height: 18px;
+  padding: 0 5px;
+  margin: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  border-radius: 9px;
+  border: 1px solid #d2b11680;
+  background-color: #d2b116;
+}
+.copy {
+  height: 50px;
+  width: 1228.8px;
+  /* position: fixed; */
+  margin: 10px auto;
+  top: 10px;
+  left: 10%;
+  background-color: #333333;
+  box-sizing: border-box;
+  border: 5px solid #aaaaaa;
+  border-radius: 100px;
+}
+.copy p {
+  text-align: center;
+  line-height: 40px;
+  color: #aaaaaa;
+}

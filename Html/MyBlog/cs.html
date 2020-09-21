@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" type="text">
+    <input id="password" type="password" name="" id="">
+    <button onclick="isPwd()">abc</button>
+</body>
+<script>
+    var userList = {"12345":"54321"}
+    function isPwd(){
+        let username = document.getElementById("input");
+        let password = document.getElementById("password")
+        if (userList[username.value] == password.value) {
+            alert(1234);
+        }else{
+            userList[username.value]=password.value;
+            console.log(parseInt(1234));
+            username.value='';
+            password.value='';
+            username.focus();
+        }
+    }
+</script>
+</html>
