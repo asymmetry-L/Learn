@@ -8,6 +8,12 @@ public class Programmer extends Emp {
         this.bonus = bonus;
     }
 
+    public static void main(String[] args) {
+        Emp programmer = new Programmer("1313131", "张伟", "11K", "15K");
+        System.out.println(programmer);
+        programmer.work();
+    }
+
     @Override
     public void work() {
         System.out.println("敲代码");
@@ -21,11 +27,5 @@ public class Programmer extends Emp {
                 ", name='" + name + '\'' +
                 ", salary='" + salary + '\'' +
                 '}';
-    }
-
-    public static void main(String[] args) {
-        Emp programmer = new Programmer("1313131", "张伟", "11K", "15K");
-        System.out.println(programmer);
-        programmer.work();
     }
 }
