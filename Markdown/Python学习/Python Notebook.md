@@ -14,9 +14,9 @@ python 编写代码时建议遵循[PEP8](https://legacy.python.org/dev/peps/pep-
 
 1.  不能使用 python 关键字，即标记不能提前被占用，python 关键字包括：
 
-|||||||||
-|---|---|---|---|---|---|---|---|
+
 |'and'|'as'| 'assert'| 'break'| 'class'| 'continue'| 'def'| 'del'|
+|---|---|---|---|---|---|---|---|
 | 'elif'| 'else'| 'except'| 'exec'| 'finally'| 'for'| 'from'| 'global'|
 | 'if'| 'import'| 'in'| 'is'| 'lambda'| 'not'| 'or'| 'pass'|
 | 'print'| 'raise'| 'return'| 'try'| 'while'| 'with'| 'yield'|
