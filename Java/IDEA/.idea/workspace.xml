@@ -24,7 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d8a3358-f9d5-44bf-addd-67b9d72637f6" name="默认的" comment="" />
+    <list default="true" id="9d8a3358-f9d5-44bf-addd-67b9d72637f6" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +45,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,15 +71,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="189" key="FileChooserDialogImpl" timestamp="1603508529046">
+    <state x="502" y="270" key="#Notifications" timestamp="1607131721097">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="549" y="189" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1603508529046" />
-    <state x="360" y="57" key="new project wizard" timestamp="1603508545016">
+    <state x="502" y="270" key="#Notifications/0.30.1536.834@0.30.1536.834" timestamp="1607131721097" />
+    <state x="361" y="88" key="#Plugins" timestamp="1607131116889">
       <screen x="0" y="30" width="1536" height="834" />
     </state>
-    <state x="360" y="57" key="new project wizard/0.30.1536.834@0.30.1536.834" timestamp="1603508545016" />
+    <state x="361" y="88" key="#Plugins/0.30.1536.834@0.30.1536.834" timestamp="1607131116889" />
+    <state x="509" y="247" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607135672302">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="509" y="247" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1536.834@0.30.1536.834" timestamp="1607135672302" />
+    <state x="574" y="163" key="#com.intellij.ide.util.MemberChooser" timestamp="1607131571308">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="574" y="163" key="#com.intellij.ide.util.MemberChooser/0.30.1536.834@0.30.1536.834" timestamp="1607131571308" />
+    <state x="549" y="189" key="FileChooserDialogImpl" timestamp="1607136100076">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="549" y="189" key="FileChooserDialogImpl/0.30.1536.834@0.30.1536.834" timestamp="1607136100076" />
+    <state x="238" y="30" key="SettingsEditor" timestamp="1607135889645">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="238" y="30" key="SettingsEditor/0.30.1536.834@0.30.1536.834" timestamp="1607135889645" />
+    <state x="360" y="57" key="new project wizard" timestamp="1607136145361">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="360" y="57" key="new project wizard/0.30.1536.834@0.30.1536.834" timestamp="1607136145361" />
   </component>
 </project>

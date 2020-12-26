@@ -1,0 +1,4 @@
+package com.test;
+class AtmTest{
+    private static final String MY_SQL_DIRVER = "com."
+}
