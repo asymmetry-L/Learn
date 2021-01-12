@@ -4,7 +4,7 @@
 import socket
 
 sk = socket.socket()
-sk.bind(("192.168.1.224",9000))
+sk.bind(("127.0.0.1",9000))
 sk.listen()
 print("+"*20)
 conn,addr = sk.accept()
