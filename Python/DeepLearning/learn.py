@@ -20,7 +20,7 @@ row_indices = np.arange(4)
 col_indices = np.arange(4)
 eye_coo = sparse.coo_matrix((data,(row_indices,col_indices)))
 print('COO representation:\n{}'.format(eye_coo))
-# %%matplotlib inline
+# %%
 import matplotlib.pyplot as plt
 # 在-10和10之间生成一个数列，共100个数
 x = np.linspace(-10, 10, 100)
@@ -34,3 +34,4 @@ from IPython.display import display
 data = {'Name':['John','Anna','Peter'],'Loction':['New York','Paris','London'],'age':[23,14,16]}
 display_pandas = pd.DataFrame(data)
 display(display_pandas)
+# %%

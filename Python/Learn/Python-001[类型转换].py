@@ -4,5 +4,3 @@ if number >50:
     print("大了")
 else:
     print("小了")
-
-77
