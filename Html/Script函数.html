@@ -19,6 +19,12 @@
             }
             return tag;
         };
+
+        // 窗口自适应
+        window.onload = () => {
+                 $("body")[0].style.height = window.screen.height+"px";
+                 $("body")[0].style.width  = document.body.scrollWidth+"px";
+             }
     </script>
 </body>
 </html>

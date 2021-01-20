@@ -8,3 +8,13 @@ print(iris_dataset['DESCR'][19:1208])
 # %%
 print('目标品种:\n{}'.format(iris_dataset['target_names']))
 # %%
+print('特征字段:\n{}'.format(iris_dataset['feature_names']))
+# 花萼长度，花萼宽度，花瓣长度，花瓣宽度
+# %%
+print('数据类型:\n{}'.format(type(iris_dataset['data'])))
+# %%
+print('数据模型:\n{}'.format(iris_dataset['data'].shape))
+# 150朵花的测量数据，包含4种特征
+# %%
+print('前五朵花的数据:\n{}'.format(iris_dataset['data'][:5]))
+# %%
