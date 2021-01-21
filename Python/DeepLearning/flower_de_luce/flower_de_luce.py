@@ -1,20 +1,16 @@
 #%%
+import pandas as pd
+from sklearn.model_selection import train_test_split
 from sklearn.datasets import load_iris
 
 iris_dataset = load_iris()
-print('鸢尾花数据集中的键为:\n{}'.format(iris_dataset.keys()))
-#%%
-print(iris_dataset['DESCR'][19:1208])
+X_train,X_text,y_train,y_test = train_test_split(iris_dataset['data'],iris_dataset['target'],random_state = 0)
+print("X_train shape:{}".format(X_train.shape))
+print("y_train shape:{}".format(y_train.shape))
 # %%
-print('目标品种:\n{}'.format(iris_dataset['target_names']))
+print('X_test:{}'.format(X_text.shape))
+print('y_test:{}'.format(y_test.shape))
 # %%
-print('特征字段:\n{}'.format(iris_dataset['feature_names']))
-# 花萼长度，花萼宽度，花瓣长度，花瓣宽度
-# %%
-print('数据类型:\n{}'.format(type(iris_dataset['data'])))
-# %%
-print('数据模型:\n{}'.format(iris_dataset['data'].shape))
-# 150朵花的测量数据，包含4种特征
-# %%
-print('前五朵花的数据:\n{}'.format(iris_dataset['data'][:5]))
+iris_dataset = pd.DataFrame(X_train,columns=iris_dataset.feature_names)
+grr = pd.scatter_matrix(iris_dataset,c=y_train,figsize = (15,15), marker = 'o',hist_kwds = {'bins':20},s=60,alpha=.8,cmap=mglearn.cm3})
 # %%

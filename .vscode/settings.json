@@ -1,5 +1,5 @@
 {
     "liveServer.settings.port": 5501,
-    "python.pythonPath": "E:\\Miniconda\\envs\\DeepLearning\\python.exe",
+    "python.pythonPath": "E:\\Miniconda\\python.exe",
     "jupyter.jupyterServerType": "local"
 }
